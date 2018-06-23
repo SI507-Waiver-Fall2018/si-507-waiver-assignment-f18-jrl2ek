@@ -4,6 +4,9 @@ import sqlite3
 from sqlite3 import Error
 from sqlite3 import connect
 
+#Name: John Robert Lint
+#Umich uniqname: jrlint
+
 
 def create_connection(db_file):
     """ create a database connection to the SQLite database

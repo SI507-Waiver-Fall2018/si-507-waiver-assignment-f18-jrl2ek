@@ -4,6 +4,9 @@ import plotly.graph_objs as go
 import plotly.offline as offline
 import csv
 
+#Name: John Robert Lint
+#Umich uniqname: jrlint
+
 def main():
     #offline.init_notebook_mode()
     py.sign_in('jrlint', 'tSc9W7gbINGUvDxgAgTS')

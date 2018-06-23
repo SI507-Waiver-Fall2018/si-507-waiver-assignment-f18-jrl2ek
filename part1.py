@@ -12,6 +12,9 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
 from collections import Counter
 
+#Name: John Robert Lint
+#Umich uniqname: jrlint
+
 consumer_key = "LlYTJdSpVZzxrlMUgs91jZMbT"
 consumer_secret = "bn08ZbBfWQfdvCLDSeDBZh3yLgr0rDplhLvRaBrY8zS5lfuoyZ"
 access_key = "1422052052-tDZfbfU2GlUJEnDbv3IYKLb4lFrvWFlNYi2UcXd"

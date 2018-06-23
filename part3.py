@@ -5,6 +5,9 @@ from requests import get
 from bs4 import BeautifulSoup
 from bs4 import NavigableString
 
+#Name: John Robert Lint
+#Umich uniqname: jrlint
+
 def accessLink(link):
     loc = link[:5]
     if loc == '/sect':
