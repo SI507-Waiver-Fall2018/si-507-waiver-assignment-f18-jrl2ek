@@ -22,7 +22,6 @@ def main():
         py.image.save_as(fig, filename='part_viz_image.png')
 
 
-
 if __name__ == "__main__":
     main()
 
