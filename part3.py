@@ -27,12 +27,6 @@ def accessLink(link):
                 print("  by ", sep='', end='')
                 print(result.text)
 
-
-        """for result in results:
-            print(x)
-            print(link)
-            print('This is the result', result.text)
-            x+=1"""
     elif loc == '/news':
         page = 'https://www.michigandaily.com' + link
         site = requests.get(page)
@@ -57,36 +51,24 @@ def main():
 
     results = soup.find('div', attrs={'class': 'panel-pane pane-mostread'})
     results = results.find_all('a')
-    #link_list = [a['href'] for a in results.find_all('a', href=True)]
-    #print(type(results))
     x=1
     titles = []
     links = []
     for result in results:
-        #if result.div:
-            #print(result.div)
-            #print('hi')
-       # print(result)
         titles.append(result.text)
-        #print(result.text)
+
         links.append(result['href'])
-        #print(result['href'])
+
         x+=1
 
     print('Michigan Daily -- MOST READ')
-    #print(titles)
-    #print(links)
     x = 0
     for link in links:
         print(titles[x])
         accessLink(link)
         x += 1
 
-    #for sub_heading in soup.find_all('div '):
-     #   print(sub_heading.text)
 
-    #name_box = soup.find()
-    #print(soup)
 
 
 if __name__ == "__main__":

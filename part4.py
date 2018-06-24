@@ -8,7 +8,6 @@ import csv
 #Umich uniqname: jrlint
 
 def main():
-    #offline.init_notebook_mode()
     py.sign_in('jrlint', 'tSc9W7gbINGUvDxgAgTS')
     with open('noun_data.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
@@ -21,7 +20,6 @@ def main():
         data = [go.Bar(x=nouns, y=nums)]
         layout = go.Layout(title='Most Common Nouns', width=800, height=800)
         fig = go.Figure(data=data, layout=layout)
-        #offline.plot(data:data1, layout: layout1)
         py.image.save_as(fig, filename='part_viz_image.png')
 
 

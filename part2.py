@@ -58,9 +58,6 @@ def select_cust_order(conn, cust):
     for row in rows:
         for x in row:
             print(x, end='', sep=' ')
-        #print(row[0], '        ', sep='', end='')
-        #print(row[1], end='')
-        #print(row[2])
         print()
 
 
@@ -70,7 +67,6 @@ def select_emp_orders(conn, emp):
     rows = cur.fetchall()
     empid = ''
     for row in rows:
-        print('val I need')
         empid = row[0]
 
 
@@ -101,7 +97,6 @@ def main():
         if v == 'cust':
             select_cust_order(connection, val2[5:])
         elif v == 'emp=':
-            print(val2[4:])
             select_emp_orders(connection, val2[4:])
 if __name__ == "__main__":
         main()
