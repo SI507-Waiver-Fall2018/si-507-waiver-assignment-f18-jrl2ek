@@ -14,7 +14,7 @@ def main():
         nouns = []
         nums = []
         for row in reader:
-            print(row['Noun'], row['Number'])
+            #print(row['Noun'], row['Number'])
             nouns.append(row['Noun'])
             nums.append(row['Number'])
         data = [go.Bar(x=nouns, y=nums)]

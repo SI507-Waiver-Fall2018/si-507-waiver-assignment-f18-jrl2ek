@@ -7,9 +7,7 @@ from operator import itemgetter, attrgetter
 import json
 import sys
 import csv
-import re
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize, sent_tokenize
+from nltk.tokenize import word_tokenize
 from collections import Counter
 
 #Name: John Robert Lint
